@@ -11,7 +11,7 @@ public class WordRepetitionMapCreator {
             return map;
         }
         
-        String[] text = sentence.split(". , ! ? : ; + - = _ [ ] ( )");
+        String[] text = sentence.split("[ ,.!-]+");
         
         for (String temp : text) {
             String word = temp.toLowerCase();
